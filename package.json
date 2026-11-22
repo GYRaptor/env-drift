@@ -1,5 +1,5 @@
 {
-  "name": "env-drift",
+  "name": "@gyraptor/env-drift",
   "version": "1.0.0",
   "description": "Detect drift between .env.example, .env and process.env. Zero-dependency library and CLI.",
   "main": "src/index.js",

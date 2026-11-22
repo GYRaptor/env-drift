@@ -9,9 +9,9 @@ Detect drift between `.env.example`, your real `.env`, and `process.env`. Zero d
 ## Installation
 
 ```bash
-npm install --save-dev env-drift
+npm install --save-dev @gyraptor/env-drift
 # or run without installing
-npx env-drift
+npx @gyraptor/env-drift
 ```
 
 Requires Node.js 18+.
@@ -21,10 +21,10 @@ Requires Node.js 18+.
 ### CLI
 
 ```bash
-npx env-drift                              # compares .env.example vs .env
-npx env-drift --process-env                # compares .env.example vs process.env (great in CI)
-npx env-drift --strict --ignore NODE_ENV   # also fail on extra keys, skip NODE_ENV
-npx env-drift --json                       # machine-readable output
+npx @gyraptor/env-drift                              # compares .env.example vs .env
+npx @gyraptor/env-drift --process-env                # compares .env.example vs process.env (great in CI)
+npx @gyraptor/env-drift --strict --ignore NODE_ENV   # also fail on extra keys, skip NODE_ENV
+npx @gyraptor/env-drift --json                       # machine-readable output
 ```
 
 Example output:
@@ -57,7 +57,7 @@ Add it to `package.json` so it runs before tests:
 ### Library
 
 ```js
-const { parseEnv, compare, checkDrift } = require('env-drift');
+const { parseEnv, compare, checkDrift } = require('@gyraptor/env-drift');
 
 const expected = parseEnv('DB_URL=\nPORT=3000\nAPI_KEY=changeme');
 const actual = parseEnv('PORT=3000\nDEBUG=1');
