@@ -13,7 +13,7 @@
   "keywords": ["env", "dotenv", ".env", "environment-variables", "validation", "config", "cli", "drift", "ci"],
   "engines": { "node": ">=18" },
   "license": "MIT",
-  "author": "Gyan <gyanendrasingh7521@gmail.com>",
+  "author": "GYRaptor <gyanendrasingh7521@gmail.com>",
   "repository": { "type": "git", "url": "git+https://github.com/GYRaptor/env-drift.git" },
   "bugs": { "url": "https://github.com/GYRaptor/env-drift/issues" },
   "homepage": "https://github.com/GYRaptor/env-drift#readme"
